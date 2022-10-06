@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "userId": "100",
+      "name": "sddsfs",
+      "age": "21"
+    },
+    {
+      "id": 3,
+      "userId": "",
+      "name": "",
+      "age": ""
+    },
+    {
+      "id": 4,
+      "userId": null,
+      "name": null,
+      "age": null
+    },
+    {
+      "id": 5,
+      "userId": "",
+      "firstname": "",
+      "lastname": "",
+      "age": ""
+    },
+    {
+      "id": 6,
+      "userId": "19uca036",
+      "firstname": "sameer",
+      "lastname": "s",
+      "message": "onnula padikkatha",
+      "age": "21"
+    },
+    {
+      "id": 7,
+      "userId": "123123",
+      "firstname": "samsam",
+      "lastname": "ss",
+      "age": "21",
+      "message": "working"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,103 @@
+<div class="container"  >
+  
+    <form [formGroup]="inputForm" class="container   p-4" >
+
+        <h3 class="text-center">Register Form</h3>
+        <div class="row">
+     
+    <div class=" mt-2 mb-2 col-lg-6 col-6 form-group">
+        <label>User Id:</label>
+        <input type="text" formControlName="userId" class="form-control" placeholder="User Id" required>
+    </div><br>
+
+    <div class=" mt-2 mb-2 col-lg-6 col-6 form-group">
+        <label>FirstName:</label>
+        <input type="text" formControlName="firstname" class="form-control" placeholder="FirstName"  required>
+    </div><br>
+
+    <div class=" mt-2 mb-2 col-lg-6 col-6 form-group">
+        <label>LastName:</label>
+        <input type="text" formControlName="lastname" class="form-control" placeholder="LastName"  required>
+    </div><br>
+
+    <div class=" mt-2 mb-2 col-lg-6 col-6 form-group">
+        <label>Age:</label>
+        <input type="text" formControlName="age" class="form-control" placeholder="age"  required>
+    </div><br><br>
+
+    <div class=" mt-2 mb-2 col-lg-12 col-12 form-group">
+        <label>Message:</label>
+        <input type="text" formControlName="message" class="form-control" placeholder="Message"  required>
+    </div><br>
+
+
+    <div class="text-center p-4">
+        <button class="btn btn-primary mt-2" (click)="postDetails()">Submit</button>
+    </div>
+        </div>
+</form><br><hr>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container p-4">
+     <input type="text" [(ngModel)]="search" placeholder="search" class="form-control">
+    </div>
+
+<table class="table table-bordered table-striped">
+<thead>
+    <tr class="text-center">
+        <th>Id</th>
+        <th>User ID</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Age</th>
+        <th>Message</th>
+
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let row of details |filter : search">
+         <td>{{row.id}}</td>
+        <td>{{row.userId}}</td>
+        <td>{{row.firstname}}</td>
+        <td>{{row.lastname}}</td>
+        <td>{{row.age}}</td>
+        <td>{{row.message}}</td>
+    </tr>
+</tbody>
+</table>
+
